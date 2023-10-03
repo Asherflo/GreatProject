@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 @EnableFeignClients
 @SpringBootApplication
+
 public class EmployeeServiceApplication {
 
 	public static void main(String[] args) {
