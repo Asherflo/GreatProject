@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "1e5efc5f-ac1d-40c3-995d-a7be1bed6c9a",
+		"name": "GreatProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21596314",
+		"_collection_link": "https://galactic-resonance-715222.postman.co/workspace/Aniyikaye-temitope-Florence~4b7565a7-011d-4d6e-a8d5-0811aebc7b82/collection/21596314-1e5efc5f-ac1d-40c3-995d-a7be1bed6c9a?action=share&source=collection_link&creator=21596314"
+	},
+	"item": [
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "save department",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"departmentName\":\"Quality Assurance\",\r\n    \"departmentDescription\":\"quality at the peak\",\r\n    \"departmentCode\":\"ISW-QA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/departments/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"departments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Department",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Departments",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Department",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/departments/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"departments",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "save employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Timileyin\", \r\n    \"lastName\": \"Paulo\",\r\n    \"email\": \"opeleke@gmail.com\",\r\n    \"departmentCode\": \"ISW-QA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/api/v1/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"v1",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee  by Department Service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/api/v1/employee/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
